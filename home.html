@@ -79,7 +79,9 @@
     <div id="latest-payments" class="flex w-full mx-auto items-center justify-between">
       <p class="text-lg font-bold">Latest Payments</p>
       <p id="view-all-link" onclick="showOnly('transactions')"
-        class="text-base font-normal text-neutral-500 hidden cursor-pointer hover:text-primary">View all</p>
+        class="text-base font-normal text-neutral-500 hidden cursor-pointer hover:text-primary">
+        View all
+      </p>
     </div>
     <div id="latest-history-container" class="pt-5 space-y-3">
       <p id="no-latest-transactions" class="text-center text-gray-400 text-sm py-4">No transactions yet.</p>
@@ -169,7 +171,11 @@
   </section>
 
   <section id="transactions" class="hidden w-11/12 mx-auto py-5">
-    <h2 class="text-xl font-bold">Transactions</h2>
+    <div class="flex items-center justify-between mb-2">
+      <h2 class="text-xl font-bold">Transactions</h2>
+      <p onclick="showOnly('main-home')"
+        class="text-base font-normal text-neutral-500 cursor-pointer hover:text-primary">View less</p>
+    </div>
     <div id="history-container" class="form pt-10">
       <div id="no-transactions"
         class="text-center py-20 bg-white rounded-xl shadow-sm border border-dashed border-gray-300 mt-5">
