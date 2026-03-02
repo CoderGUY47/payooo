@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Payoo | SignUp</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <style type="text/tailwindcss">
+    *{
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
+</head>
+
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+  <div class="logo w-[200px] mx-auto pt-24">
+    <img src="./assets/Logo-full.png" alt="Payoo Logo">
+  </div>
+
+  <div class="form pt-10 px-4">
+    <div class="card bg-base-100 w-full shrink-0 shadow-md mx-auto rounded-2xl overflow-hidden border border-gray-100">
+      <div class="card-body p-8">
+        <h2 class="text-2xl font-bold text-center mb-2">Create Account</h2>
+        <p class="text-neutral-500 text-center text-sm mb-6">Join Payoo and enjoy seamless banking</p>
+
+        <fieldset class="fieldset">
+          <label class="floating-label w-full">
+            <span class="font-normal text-neutral text-sm">Enter your username</span>
+            <input id="signup-name" type="text" placeholder="Enter your username" class="input input-md w-full" />
+          </label>
+          <br>
+
+          <label class="floating-label w-full">
+            <span class="font-normal text-gray-500/70 text-sm">Select your gender</span>
+            <select id="signup-gender" class="select select-md w-full text-gray-500">
+              <option value="" class="text-gray-500">Select your gender</option>
+              <option value="male" class="text-gray-500">Male</option>
+              <option value="female" class="text-gray-500">Female</option>
+              <option value="other" class="text-gray-500">Other</option>
+            </select>
+          </label>
+          <br>
+
+          <label class="floating-label w-full">
+            <span class="font-normal text-neutral text-sm">Enter your address</span>
+            <input id="signup-address" type="text" placeholder="Enter your address" class="input input-md w-full" />
+          </label>
+          <br>
+
+          <label class="floating-label w-full">
+            <span class="font-normal text-neutral text-sm">Enter your mobile number</span>
+            <input id="signup-number" type="text" maxlength="11" minlength="11" placeholder="Enter your 11-digit number"
+              class="input input-md w-full" />
+          </label>
+          <br>
+
+          <label class="floating-label w-full">
+            <span class="font-normal text-neutral text-sm">Enter your 4 digit pin</span>
+            <input id="signup-pin" maxlength="4" type="password" placeholder="Enter 4 digit pin number"
+              class="input input-md w-full" />
+          </label>
+          <button id="signup-btn" class="max-w-sm w-full btn btn-primary rounded-full mt-4">SignUp</button>
+          <div class="flex items-center justify-center pt-2">
+            <p class="text-xs">Already have an account?</p>
+            <a href="./index.html" class="text-primary text-xs hover:underline font-medium">Back to Login Page</a>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script/signUp.js"></script>
+  <script src="./script/machine.js"></script>
+</body>
+
+</html>
